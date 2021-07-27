@@ -1,6 +1,6 @@
-# React Fund Projects
+# Color Generator
 
-Improve your skills with the React JavaScript library by building 15 projects using React.
+- This project make use of [valuesJs library](https://github.com/noeldelgado/values.js)
 
 ## credits
 
