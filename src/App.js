@@ -4,12 +4,14 @@ import Values from 'values.js'
 
 function App() {
   const [color, setColor] = useState('')
+  const [numColors, setNumColors] = useState(10)
   const [error, setError] = useState(false)
-  const [list, setList] = useState(new Values('#f15025').all(10))
+  const [list, setList] = useState(new Values('#f15025').all(numColors))
   const handleSubmit = e => {
     e.preventDefault()
+    setError(false)
     try{
-      const colors = new Values(color).all(10)
+      let colors = new Values(color).all(parseInt(numColors))
       setList(colors)
     }catch(error){
       setError(true)
@@ -27,6 +29,13 @@ function App() {
             placeholder='#f15025'
             className={`${error ? 'error': null}`}
           />
+         <input 
+            type="number"
+            value={numColors}
+            onChange={e => setNumColors(e.target.value)}
+            style={{border:"2px solid gray"}}
+          />
+
           <button type="submit" className="btn">Generate</button>
         </form>
       </section>
