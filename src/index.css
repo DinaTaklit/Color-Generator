@@ -202,6 +202,7 @@ Variables
     color: var(--clr-grey-1);
     margin-bottom: 0;
   }
+
   .color-light .color-value {
     color: var(--clr-white);
   }
@@ -213,4 +214,9 @@ Variables
     text-transform: uppercase;
     font-size: 0.85rem;
     margin-top: 0.5rem;
+    color: var(--clr-grey-4);
+  }
+
+  .alert.color-light{
+    color: var(--clr-grey-7);
   }
