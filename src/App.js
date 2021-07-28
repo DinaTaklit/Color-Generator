@@ -32,6 +32,7 @@ function App() {
                 {...color}
                 index={index}
                 hexColor={color.hex}
+                base={list.length / 2}
               />
             )
           })
