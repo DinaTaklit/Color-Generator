@@ -1,5 +1,6 @@
 # Color Generator
 
+- Live preview: https://dinataklit.github.io/Color-Generator/
 - This project make use of [valuesJs library](https://github.com/noeldelgado/values.js)
 
 - to deploy the app in git follow this [guid](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
